@@ -35,6 +35,11 @@ body {
 
 /* components  */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -56,8 +61,8 @@ body {
 
 .link {
   display: block;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav {
@@ -136,8 +141,6 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .auth-nav:first-child {
@@ -208,13 +211,12 @@ ul {
 
 /* Feautures */
 
-.features {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-
 .features-listwrapper {
   display: flex;
+}
+
+.list-features {
+  width: 270px;
 }
 
 .list-features:not(:last-child) {
@@ -242,14 +244,12 @@ ul {
 /* Example */
 
 .sphere {
-  padding-top: 47px;
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .sphere-pictures {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .sphere-title {
@@ -258,18 +258,18 @@ ul {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 /* Team */
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-cards {
   display: flex;
+  gap: 30px;
 }
 
 .team-card {
@@ -279,8 +279,8 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-card:not(:last-child) {
-  margin-right: 30px;
+.team-card {
+  flex-basis: calc((100% - 30px * 3) / 4);
 }
 
 .our-employees {
@@ -366,7 +366,6 @@ ul {
 
 .address {
   font-style: normal;
-  text-decoration: none;
 }
 
 .address:hover,
@@ -389,16 +388,11 @@ ul {
 
 /* Portfolio Main */
 
-.portfolio-main-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .portfolio-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  column-gap: 8px;
+  gap: 8px;
 }
 
 .portfolio-filter-button {
@@ -419,7 +413,7 @@ ul {
 }
 
 .work-portfolio {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 
 .auth-nav.list a {
@@ -474,7 +468,7 @@ ul {
 .work-text {
   color: var(--primary-tex-color);
   font-size: 16px;
-  line-height: 2;
+  line-height: 30px;
   letter-spacing: 0.03em;
 }
 
