@@ -15,6 +15,7 @@ p {
 
 ul,
 ol {
+  list-style: none;
   margin-top: 0px;
   margin-bottom: 0;
   padding-left: 0;
@@ -48,6 +49,19 @@ body {
 }
 
 /* header */
+
+.main-hero {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/fotohero.jpg');
+}
 
 .site-nav {
   display: flex;
@@ -184,7 +198,6 @@ ul {
   align-items: center;
 }
 .main-hero {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -294,6 +307,41 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.icon-team {
+  display: flex;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 10px * 4) / 4);
+  gap: 10px;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hallo {
+  background-color: AFB1B8;
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: white;
+}
 .team-title {
   color: var(--title-tex-color);
   font-size: 36px;
