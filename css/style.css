@@ -93,11 +93,6 @@ body {
   margin-right: 10px;
 }
 
-.header-envelope {
-  width: 16px;
-  height: 12px;
-}
-
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -176,6 +171,11 @@ ul {
 
 .auth-nav:first-child {
   margin-right: 50px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
 }
 
 .contacts-link:hover,
@@ -532,6 +532,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  gap: 10px;
 }
 
 .auth-nav.list a:hover,
@@ -545,14 +546,9 @@ ul {
 }
 
 .header-envelope {
-  fill: #757575;
+  fill: currentColor;
 }
 
-.header-envelope {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .button-primary {
   background-color: #f5f4fa;
   font-weight: 500;
