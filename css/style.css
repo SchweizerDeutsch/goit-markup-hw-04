@@ -83,6 +83,21 @@ body {
   display: flex;
 }
 
+.social-icon-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.header-envelope {
+  width: 16px;
+  height: 12px;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -155,6 +170,8 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .auth-nav:first-child {
@@ -309,6 +326,9 @@ ul {
 
 .icon-team {
   display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 0 32px;
 }
 
 .social-item {
@@ -319,13 +339,15 @@ ul {
   gap: 10px;
 }
 .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
-  padding: 10px;
+
   background-color: #ffffff;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
+
+  border-radius: 100%;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -338,6 +360,9 @@ ul {
   background-color: var(--accent-color);
 }
 
+.social-icon {
+  fill: #afb1b8;
+}
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: white;
@@ -380,6 +405,36 @@ ul {
 .button.primary:hover,
 .button.primary:focus {
   background-color: #188ce8;
+}
+
+.clients-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.clients-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-tex-color);
+}
+.clients-title {
+  align-items: center;
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-expample {
+  width: 170px;
+  height: 92px;
 }
 
 /* Footer */
@@ -484,6 +539,20 @@ ul {
   color: var(--accent-color);
 }
 
+.header-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.header-envelope {
+  fill: #757575;
+}
+
+.header-envelope {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .button-primary {
   background-color: #f5f4fa;
   font-weight: 500;
